@@ -39,32 +39,32 @@
 //
 // Servos
 //
-#define SERVO0_PIN                          PA1   // SERVOS
+#define SERVO0_PIN                          PA1   // "SERVOS" Swapped with PC14 for BLTouch attached to SERVO Pins
 
 //
 // Limit Switches
 //
-#define X_STOP_PIN                          PC0   // X-STOP
-#define Y_STOP_PIN                          PC1   // Y-STOP
-#define Z_STOP_PIN                          PC2   // Z-STOP
+#define X_STOP_PIN                          PC0   // "X-STOP"
+#define Y_STOP_PIN                          PC1   // "Y-STOP"
+#define Z_STOP_PIN                          PC2   // "Z-STOP"
 
 //
 // Z Probe must be this pin
 //
-#define Z_MIN_PROBE_PIN                     PC14  // PROBE
+#define Z_MIN_PROBE_PIN                     PC14  // "PROBE" Swapped PA1 with PC14 "Servos" to attache BLTouch
 
 //
 // Filament Runout Sensor
 //
 #ifndef FIL_RUNOUT_PIN
-  #define FIL_RUNOUT_PIN                    PC15  // E0-STOP
+#define FIL_RUNOUT_PIN                      PC12 //  Runout Sensor
 #endif
 
 //
 // Power-loss Detection
 //
 #ifndef POWER_LOSS_PIN
-  #define POWER_LOSS_PIN                    PC12  // Power Loss Detection: PWR-DET
+#define POWER_LOSS_PIN                      PC15  // "PT-DET" Pin to install Runout Sensor: Alias: PWR-DET
 #endif
 
 //
