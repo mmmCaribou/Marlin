@@ -39,32 +39,32 @@
 //
 // Servos
 //
-#define SERVO0_PIN                          PA1   // SERVOS
+#define SERVO0_PIN                          PC14  // "SERVOS" 
 
 //
 // Limit Switches
 //
-#define X_STOP_PIN                          PC0   // X-STOP
-#define Y_STOP_PIN                          PC1   // Y-STOP
-#define Z_STOP_PIN                          PC2   // Z-STOP
+#define X_STOP_PIN                          PC0   // "X-STOP"
+#define Y_STOP_PIN                          PC1   // "Y-STOP"
+#define Z_STOP_PIN                          PA1   // "Z-STOP"
 
 //
 // Z Probe must be this pin
 //
-#define Z_MIN_PROBE_PIN                     PC14  // PROBE
+#define Z_MIN_PROBE_PIN                     PA1  // "PROBE"
 
 //
 // Filament Runout Sensor
 //
 #ifndef FIL_RUNOUT_PIN
-  #define FIL_RUNOUT_PIN                    PC15  // E0-STOP
+  #define FIL_RUNOUT_PIN                    PC12  // "E0-STOP" PREVIOUSLY PC15 CRJ 012621
 #endif
 
 //
 // Power-loss Detection
 //
 #ifndef POWER_LOSS_PIN
-  #define POWER_LOSS_PIN                    PC12  // Power Loss Detection: PWR-DET
+  #define POWER_LOSS_PIN                    PC15  // Power Loss Detection: PWR-DET PREVIOUSLY PC12 CRJ 012621
 #endif
 
 //
